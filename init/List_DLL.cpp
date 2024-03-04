@@ -1,20 +1,23 @@
-#include <iostream>
-#include <stdexcept>
+// #include <iostream>
+// #include <stdexcept>
 
-template<typename T>
-class List {
-public:
-    virtual ~List() = default;
-    virtual void push_back(T value) = 0;
-    virtual void push_front(T value) = 0;
-    virtual void insert(int index, T value) = 0;
-    virtual void remove(int index) = 0;
-    virtual T& get(int index) const = 0;
-    virtual int length() const = 0;
-    virtual void clear() = 0;
-    virtual void print() const = 0;
-    virtual void reverse() = 0;
-};
+// template<typename T>
+// class List {
+// public:
+//     virtual ~List() = default;
+//     virtual void push_back(T value) = 0;
+//     virtual void push_front(T value) = 0;
+//     virtual void insert(int index, T value) = 0;
+//     virtual void remove(int index) = 0;
+//     virtual T& get(int index) const = 0;
+//     virtual int length() const = 0;
+//     virtual void clear() = 0;
+//     virtual void print() const = 0;
+//     virtual void reverse() = 0;
+// };
+
+
+#include "kNN.hpp" // FOR DEBUG
 
 template<typename T>
 class Node {
