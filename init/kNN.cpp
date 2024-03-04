@@ -158,3 +158,35 @@ public:
 
 
 /***************** CLASS DATASET **********************/
+
+class Dataset {
+private:
+    List<List<int>*>* data;
+    //You may need to define more
+public:
+    Dataset();
+    ~Dataset();
+    Dataset(const Dataset& other);
+    Dataset& operator=(const Dataset& other);
+    bool loadFromCSV(const char* fileName);
+    void printHead(int nRows = 5, int nCols = 5) const;
+    void printTail(int nRows = 5, int nCols = 5) const;
+    void getShape(int& nRows, int& nCols) const;
+    void columns() const;
+    bool drop(int axis = 0, int index = 0, std::string columns = "");
+    Dataset extract(int startRow = 0, int endRow = -1, int startCol = 0, int endCol = -1) const;
+	//endRow: 0:(28x28), endCol: nums of data_train
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
